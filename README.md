@@ -1,5 +1,5 @@
 # My Leetcode Problems
-Created on 17/12/2023, this repository contains the leetcode problems I have solved till date. 
+Created on 17/12/2023, this repository contains the leetcode problems I have solved. 
 The main purpose behind it is to keep track of the progress I've made.
 
 ## Week 1 - Array (1)
