@@ -47,4 +47,12 @@ class Solution:
             for j in range(i+1, len(nums)):
                 if (nums[i] + nums[j]) == target:
                     return [i, j]
-        
+
+    # The following function gives the solution in O(n), since differences.get() has a runtime of O(1)
+    def twoSumOptimized(self, nums: List[int], target: int) -> List[int]:
+        differences = {}
+        for i in range(len(nums)):
+            if differences.get(target - nums[i]) != None:
+                return [differences[target - nums[i]], i]
+            else:
+                differences[nums[i]] = i
